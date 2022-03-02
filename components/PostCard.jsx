@@ -1,11 +1,15 @@
 import React from 'react'
 
-const PostCard = ({ post }) => {
-  return (
-    <div>
-      {post.titulo}
-      {post.excrept}
+import moment from 'moment';
+import Link from 'next/link';
 
+const PostCard = ({ post }) => {
+  console.log(post)
+  return (
+    <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+      <div className="relative iverflow-hidden shadow-md pb-80 mb-6">
+        {/* <img src={post.imagem.url} alt={post.titulo} className='object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg' /> */}
+      </div>
     </div>
   )
 }
